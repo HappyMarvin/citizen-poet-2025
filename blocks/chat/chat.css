@@ -1,0 +1,44 @@
+.chat {
+  width: 300px;
+}
+
+.chat__list {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding-top: 5px;
+  overflow: scroll;
+}
+
+.chat__message {
+  border: 1px solid black;
+  width: max-content;
+  padding: 5px;
+  max-width: 80%;
+  margin: 5px;
+}
+
+.chat__message_bot {
+  align-self: flex-end;
+}
+
+.chat__message_user {
+
+}
+
+.chat__form {
+  display: flex;
+  width: 100%;
+}
+
+.chat__input {
+  width: calc(100% - 90px);
+  margin: 0;
+}
+
+.chat__button {
+  width: 90px;
+  margin: 0;
+}
