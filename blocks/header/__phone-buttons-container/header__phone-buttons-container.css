@@ -1,0 +1,5 @@
+.header__phone-buttons-container {
+    margin: 64px 24px 28px 25px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,5 @@
+.header__section-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

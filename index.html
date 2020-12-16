@@ -11,7 +11,59 @@
 </head>
 <body class="root">
     <div class="root__content">
-        <header class="header"></header>
+        <header class="header">
+            <section class="header__section-one">
+                <div class="header__logo">
+                    <img class="header__logo-image" src="./images/header__logo.png" alt="Логотип сервиса Гражданин-поэт 2025">
+                    <p class="header__logo-text">Министерство гражданских инициатив</p>
+                </div>
+                <a class="header__user" href="#" target="_blank">
+                    <img class="header__user-avatar" src="./images/user-avatar.png" alt="Аватар пользователя">
+                </a>
+            </section>
+            
+            <section class="header__section-two">
+                <h1 class="header__title">Министерство гражданских инициатив</h1>
+                <p class="header__description">Мы поможем сформулировать и направить запрос по стихам знаменитых классиков согластно закону номер 1111111 от 12.03.2025 “О цензуре в административных запросах.”</p>
+                <button class="header__button">Начать</button>
+            </section>
+
+            <div class="header__phone-container">
+                <div class="header__phone-message-container header__phone-message-container_incoming">
+                    <img class="header__phone-message-image header__phone-message-image_incoming" src="./images/chat-bot-image.png" alt="Аватар чат бота">
+                    <div class="header__phone-message header__phone-message_incoming">
+                        <p class="header__phone-message-text">Привет, меня зовут Николай Васильевич! Напиши свой запрос и я найду его в строчках знаменитых классиков</p>
+                    </div>
+                </div>
+                
+                <div class="header__phone-message-container header__phone-message-container_outgoing">
+                    <div class="header__phone-message header__phone-message_outgoing">
+                        <p class="header__phone-message-text">Заменить скамейку у дома</p>
+                    </div>
+                    <img class="header__phone-message-image header__phone-message-image_outgoing" src="./images/user-avatar.png" alt="Аватар пользователя">
+                </div>
+
+                <div class="header__phone-message-container header__phone-message-container_incoming">
+                    <img class="header__phone-message-image header__phone-message-image_incoming" src="./images/chat-bot-image.png" alt="Аватар чат бота">
+                    <div class="header__phone-message header__phone-message_incoming">
+                        <p class="header__phone-message-text">Утраты сердца <span class="header__phone-message-text-span">заменить</span><br> Зеленой садовой <span class="header__phone-message-text-span">скамейки</span><br> В ночь таежную <span class="header__phone-message-text-span">у</span> костра<br> Стучащаяся пальчиком в <span class="header__phone-message-text-span">дома</span></p>
+                    </div>
+                </div>
+
+                <div class="header__phone-message-container header__phone-message-container_incoming header__phone-message-container_last">
+                    <img class="header__phone-message-image header__phone-message-image_incoming" src="./images/chat-bot-image.png" alt="Аватар чат бота">
+                    <div class="header__phone-message header__phone-message_incoming">
+                        <p class="header__phone-message-text">Все верно, регистируем?</p>
+                    </div>
+                </div>
+
+                <div class="header__phone-buttons-container">
+                    <button class="header__phone-button" type="submit">Зарегистрировать</button>
+                    <button class="header__phone-button" type="reset">Отмена</button>
+                </div>
+            </div>
+            
+        </header>
         <main class="content"></main>
         <footer class="footer"></footer>
     </div>

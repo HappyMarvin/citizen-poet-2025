@@ -1,0 +1,9 @@
+.header__phone-message-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.header__phone-message-container:first-child {
+    margin-top: 0;
+}
