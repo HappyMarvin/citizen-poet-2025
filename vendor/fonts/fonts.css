@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'Helvetica Neue';
+    font-family: 'Roboto';
     font-weight: 400;
-    src: url(./HelveticaNeueCyr-Light.ttf);
+    src: url(./Roboto-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Helvetica Neue';
+    font-family: 'Roboto';
     font-weight: 500;
-    src: url(./HelveticaNeueCyr-Medium.ttf);
+    src: url(./Roboto-Medium.ttf);
 }
 
 @font-face {
-    font-family: 'Helvetica Neue';
+    font-family: 'Roboto';
     font-weight: 700;
-    src: url(./HelveticaNeueCyr-Bold.ttf);
+    src: url(./Roboto-Bold.ttf);
 }

@@ -1,0 +1,5 @@
+.logo__container_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}

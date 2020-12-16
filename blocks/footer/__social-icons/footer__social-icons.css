@@ -1,0 +1,9 @@
+.footer__social-icons {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 30px;
+}

@@ -13,9 +13,11 @@
     <div class="root__content">
         <header class="header">
             <section class="header__section-one">
-                <div class="header__logo">
-                    <img class="header__logo-image" src="./images/header__logo.png" alt="Логотип сервиса Гражданин-поэт 2025">
-                    <p class="header__logo-text">Министерство гражданских инициатив</p>
+                <div class="logo__container logo__container_header">
+                    <a class="logo__link" href="#">
+                        <img class="logo__image logo__image_header" src="./images/citizen-logo.png" alt="Логотип сервиса Гражданин-поэт 2025">
+                    </a>
+                    <p class="logo__text">Министерство гражданских инициатив</p>
                 </div>
                 <a class="header__user" href="#" target="_blank">
                     <img class="header__user-avatar" src="./images/user-avatar.png" alt="Аватар пользователя">
@@ -53,7 +55,7 @@
                 <div class="header__phone-message-container header__phone-message-container_incoming header__phone-message-container_last">
                     <img class="header__phone-message-image header__phone-message-image_incoming" src="./images/chat-bot-image.png" alt="Аватар чат бота">
                     <div class="header__phone-message header__phone-message_incoming">
-                        <p class="header__phone-message-text">Все верно, регистируем?</p>
+                        <p class="header__phone-message-text">Все верно, регистрируем?</p>
                     </div>
                 </div>
 
@@ -82,7 +84,20 @@
                 </li>
             </ul>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="logo__container logo__container_footer">
+                    <img class="logo__image logo__image_footer" src="./images/citizen-logo.png" alt="Логотип сервиса Гражданин-поэт 2025">
+                    <p class="logo__text">Министерство гражданских инициатив</p>
+                </div>
+                <ul class="footer__social-icons">
+                    <li><a class="footer__social-icons-link" href="#"><img class="footer__social-icon" src="./images/twitter-icon.png" alt="Твиттер"></a></li>
+                    <li><a class="footer__social-icons-link" href="#"><img class="footer__social-icon" src="./images/fb-icon.png" alt="Фейсбук"></a></li>
+                    <li><a class="footer__social-icons-link" href="#"><img class="footer__social-icon" src="./images/vk-icon.png" alt="Вконтакте"></a></li>
+                </ul>
+                <p class="footer__author">&COPY; Сделано студентами <span class="footer__span"><a class="footer__author-link">Яндекс.Практикума</a></span></p>
+            </div>
+        </footer>
     </div>
     <script src="./pages/index.js"></script>  
 </body>
