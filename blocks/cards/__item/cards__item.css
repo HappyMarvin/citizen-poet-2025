@@ -14,3 +14,37 @@
 .cards__item:last-of-type {
     margin-right: 0;
 }
+
+@media screen and (max-width: 1280px) {
+    .cards__item {
+        width: 263px;
+        height: 293px;
+        margin-right: 68px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .cards__item {
+        width: 224px;
+        height: 251px;
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .cards__item {
+        margin: 0 0 130px 0;
+    }
+
+    .cards__item:last-of-type {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .cards__item {
+        width: 184px;
+        height: 243px;
+        margin: 0 0 102px 0;
+    }
+}

@@ -1,0 +1,11 @@
+@media screen and (max-width: 810px) {
+    .header__phone-message-container_last-tablet {
+        margin-top: 44px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .header__phone-message-container_last-tablet {
+        margin-top: 16px;
+    }
+}

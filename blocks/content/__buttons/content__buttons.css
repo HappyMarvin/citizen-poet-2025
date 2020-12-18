@@ -4,3 +4,21 @@
     align-items: center;
     margin-top: 136px;
 }
+
+@media screen and (max-width: 1280px) {
+    .content__buttons {
+        margin-top: 104px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .content__buttons {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .content__buttons {
+        margin-top: 48px;
+    }
+}

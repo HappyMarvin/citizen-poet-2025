@@ -3,3 +3,16 @@
     font-size: 16px;
     font-weight: 400;
 }
+
+@media screen and (max-width: 840px) {
+    .footer__author {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .footer__author {
+        font-size: 14px;
+    }
+}

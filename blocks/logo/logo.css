@@ -5,6 +5,7 @@
 @import url(./__image/_header/logo__image_header.css);
 @import url(./__image/_footer/logo__image_footer.css);
 @import url(./__text/logo__text.css);
+@import url(./__text/_header/logo__text_header.css);
 @import url(./__link/logo__link.css);
 
 .logo {

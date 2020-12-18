@@ -1,0 +1,21 @@
+.header__phone-button-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 610px) {
+    .header__phone-button-mobile {
+        display: block;
+        margin: 64px 0 -18px 0;
+        width: 180px;
+        height: 48px;
+        border-radius: 10px;
+        background-color: #2F89FC;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        box-shadow: 0 3px 3px rgb(0, 0, 0, 0.3);
+    }
+}
