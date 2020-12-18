@@ -1,3 +1,8 @@
+@import url(./__buttons/content__buttons.css);
+@import url(./__button/content__button.css);
+@import url(./__button/_signup/content__button_signup.css);
+@import url(./__button/_signin/content__button_signin.css);
+
 .content {
     margin-top: 467px;
     padding: 0 150px 0 150px;

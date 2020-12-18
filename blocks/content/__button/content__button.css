@@ -1,0 +1,10 @@
+.content__button {
+    width: 482px;
+    height: 73px;
+    border-radius: 10px;
+    font-size: 36px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
