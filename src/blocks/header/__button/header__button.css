@@ -1,0 +1,35 @@
+.header__button {
+    margin-top: 105px;
+    width: 270px;
+    height: 73px;
+    border-radius: 10px;
+    background-color: #2F89FC;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0 3px 3px rgb(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1280px) {
+    .header__button {
+        margin-top: 48px;
+        width: 226px;
+        height: 62px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .header__button {
+        margin-top: 62px;
+        width: 228px;
+        height: 46px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .header__button {
+        display: none;
+    }
+}

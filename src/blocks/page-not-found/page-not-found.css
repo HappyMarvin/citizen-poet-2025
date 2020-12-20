@@ -1,0 +1,28 @@
+@import url(./__title/page-not-found__title.css);
+@import url(./__button/page-not-found__button.css);
+
+.page-not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 316px 150px 316px 150px;
+}
+
+@media screen and (max-width: 1280px) {
+    .page-not-found {
+        margin: 185px 50px 185px 50px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .page-not-found {
+        margin: 185px 16px 185px 16px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .page-not-found {
+        margin: 136px 16px 136px 16px;
+    }
+}
