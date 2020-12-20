@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/citizen-poet-2025/static/css/main.6b7dd2ec.chunk.css",
+    "main.js": "/citizen-poet-2025/static/js/main.e2fa669b.chunk.js",
+    "main.js.map": "/citizen-poet-2025/static/js/main.e2fa669b.chunk.js.map",
+    "runtime-main.js": "/citizen-poet-2025/static/js/runtime-main.82cf6c23.js",
+    "runtime-main.js.map": "/citizen-poet-2025/static/js/runtime-main.82cf6c23.js.map",
+    "static/js/2.944cb164.chunk.js": "/citizen-poet-2025/static/js/2.944cb164.chunk.js",
+    "static/js/2.944cb164.chunk.js.map": "/citizen-poet-2025/static/js/2.944cb164.chunk.js.map",
+    "static/js/3.5234c434.chunk.js": "/citizen-poet-2025/static/js/3.5234c434.chunk.js",
+    "static/js/3.5234c434.chunk.js.map": "/citizen-poet-2025/static/js/3.5234c434.chunk.js.map",
+    "index.html": "/citizen-poet-2025/index.html",
+    "static/css/main.6b7dd2ec.chunk.css.map": "/citizen-poet-2025/static/css/main.6b7dd2ec.chunk.css.map",
+    "static/js/2.944cb164.chunk.js.LICENSE.txt": "/citizen-poet-2025/static/js/2.944cb164.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/citizen-poet-2025/static/media/header-background.472c0bde.png",
+    "static/media/chat-bot-image.5f7287ee.png": "/citizen-poet-2025/static/media/chat-bot-image.5f7287ee.png",
+    "static/media/user-avatar.614676bf.png": "/citizen-poet-2025/static/media/user-avatar.614676bf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82cf6c23.js",
+    "static/js/2.944cb164.chunk.js",
+    "static/css/main.6b7dd2ec.chunk.css",
+    "static/js/main.e2fa669b.chunk.js"
+  ]
+}
