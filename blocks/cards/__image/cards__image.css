@@ -4,3 +4,30 @@
     height: 264px;
     margin-top: -132px;
 }
+
+@media screen and (max-width: 1280px) {
+    .cards__image {
+        border-radius: 50%;
+        width: 177px;
+        height: 177px;
+        margin-top: -88.5px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .cards__image {
+        border-radius: 50%;
+        width: 165px;
+        height: 165px;
+        margin-top: -82.5px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .cards__image {
+        border-radius: 50%;
+        width: 115px;
+        height: 115px;
+        margin-top: -57.5px;
+    }
+}

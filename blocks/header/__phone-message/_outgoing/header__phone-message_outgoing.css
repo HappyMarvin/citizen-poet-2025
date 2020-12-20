@@ -1,4 +1,5 @@
 .header__phone-message_outgoing {
-    width: 260px;
+    max-width: 260px;
+    min-height: 33px;
     background-color: #A5F5EA;
 }

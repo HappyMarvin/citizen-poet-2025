@@ -12,8 +12,27 @@
     background-color: #DCFEF9;
 }
 
-@media screen and (max-width: 800px) {
+/*@media screen and (max-width: 800px) {*/
+/*    .footer {*/
+/*        margin-top: 32px;*/
+@media screen and (max-width: 1280px) {
     .footer {
-        margin-top: 32px;
+        margin-top: 104px;
+        padding: 0 50px 0 50px;
+        background-color: #DCFEF9;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .footer {
+        margin-top: 80px;
+        padding: 0 16px 0 16px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .footer {
+        margin-top: 72px;
+        padding: 0 16px 0 16px;
     }
 }

@@ -2,5 +2,33 @@
     margin: 0;
     font-size: 20px;
     font-weight: 400;
-    margin: 32px 27px 0px 16px;
+    margin: 0 16px 40px 16px;
+}
+
+@media screen and (max-width: 1280px) {
+    .cards__description {
+        font-size: 16px;
+        margin: 0 9px 43px 9px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .cards__description {
+        font-size: 13px;
+        margin: 0 15px 28px 15px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .cards__description {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .cards__description {
+        text-align: center;
+        font-size: 14px;
+        margin: 0 8px 41px 8px;
+    }
 }

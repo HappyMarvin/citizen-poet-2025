@@ -1,0 +1,23 @@
+.content__button_signup {
+    margin-bottom: 40px;
+    background-color: #2F89FC;
+    color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+    .content__button_signup {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .content__button_signup {
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .content__button_signup {
+        margin-bottom: 42px;
+    }
+}

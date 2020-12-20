@@ -1,0 +1,18 @@
+.header__menu-burger {
+    display: none;
+}
+
+@media screen and (max-width: 610px) {
+    .header__menu-burger {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .header__menu-burger {
+        width: 36px;
+        height: 36px;
+    }
+}
