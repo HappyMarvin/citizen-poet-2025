@@ -1,12 +1,13 @@
 .header__phone-message-container_outgoing {
+    align-self: flex-end;
     margin-right: -86px;
-    margin-left: 88px;
+    margin-left: 0;
 }
 
 @media screen and (max-width: 1280px) {
     .header__phone-message-container_outgoing {
         margin-right: -60px;
-        margin-left: 28px;
+        margin-left: 0;
     }
 }
 

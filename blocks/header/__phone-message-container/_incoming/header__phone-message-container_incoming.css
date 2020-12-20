@@ -1,5 +1,6 @@
 .header__phone-message-container_incoming {
     margin-left: -96px;
+    align-self: flex-start;
 }
 
 @media screen and (max-width: 1280px) {

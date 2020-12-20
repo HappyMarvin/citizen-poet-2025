@@ -21,13 +21,12 @@
 
 @media screen and (max-width: 610px) {
     .header__title {
-        text-align: center;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 510px) {
     .header__title {
-        max-width: 288px;
         font-size: 25px;
     }
 }

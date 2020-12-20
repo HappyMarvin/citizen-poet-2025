@@ -25,7 +25,7 @@
     }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 470px) {
     .cards__description {
         text-align: center;
         font-size: 14px;

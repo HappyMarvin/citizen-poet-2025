@@ -23,7 +23,7 @@
     }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 470px) {
     .cards__image {
         border-radius: 50%;
         width: 115px;
