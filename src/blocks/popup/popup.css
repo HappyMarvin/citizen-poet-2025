@@ -1,0 +1,31 @@
+@import url(./__close-button/popup__close-button.css);
+@import url(./__container/popup__container.css);
+@import url(./__container/_type/popup__container_type_signin.css);
+@import url(./__container/_type/popup__container_type_signup.css);
+@import url(./__input/popup__input.css);
+@import url(./__input/_type/popup__input_type_email.css);
+@import url(./__input/_type/popup__input_type_name.css);
+@import url(./__input/_type/popup__input_type_password.css);
+@import url(./__input/_type/popup__input_type_phone.css);
+@import url(./__radio-container/popup__radio-container.css);
+@import url(./__radio-offer/popup__radio-offer.css);
+@import url(./__radiobutton/popup__radiobutton.css);
+@import url(./__submit-button/popup__submit-button.css);
+@import url(./__title/popup__title.css);
+@import url(./_type/popup_type_signin.css);
+@import url(./_type/popup_type_signup.css);
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s linear, visibility 0.3s linear;
+}

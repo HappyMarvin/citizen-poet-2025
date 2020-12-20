@@ -3,7 +3,7 @@ import cardOne from '../images/card1.png';
 import cardTwo from '../images/card2.png';
 import cardThree from '../images/card3.png';
 
-function Main() {
+function Main(props) {
     return (
         <main className="content">
             <ul className="cards">
@@ -24,8 +24,8 @@ function Main() {
                 </li>
             </ul>
             <div className="content__buttons">
-                <button className="content__button content__button_signup">Зарегистрироваться</button>
-                <button className="content__button content__button_signin">Войти</button>
+                <button className="content__button content__button_signup" type="button" onClick={props.onSignupPopup}>Зарегистрироваться</button>
+                <button className="content__button content__button_signin" type="button" onClick={props.onSigninPopup}>Войти</button>
             </div>
         </main>
     );
