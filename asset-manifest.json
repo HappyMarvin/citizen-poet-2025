@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/citizen-poet-2025/static/css/main.6b7dd2ec.chunk.css",
-    "main.js": "/citizen-poet-2025/static/js/main.e2fa669b.chunk.js",
-    "main.js.map": "/citizen-poet-2025/static/js/main.e2fa669b.chunk.js.map",
-    "runtime-main.js": "/citizen-poet-2025/static/js/runtime-main.82cf6c23.js",
-    "runtime-main.js.map": "/citizen-poet-2025/static/js/runtime-main.82cf6c23.js.map",
-    "static/js/2.944cb164.chunk.js": "/citizen-poet-2025/static/js/2.944cb164.chunk.js",
-    "static/js/2.944cb164.chunk.js.map": "/citizen-poet-2025/static/js/2.944cb164.chunk.js.map",
-    "static/js/3.5234c434.chunk.js": "/citizen-poet-2025/static/js/3.5234c434.chunk.js",
-    "static/js/3.5234c434.chunk.js.map": "/citizen-poet-2025/static/js/3.5234c434.chunk.js.map",
+    "main.css": "/citizen-poet-2025/static/css/main.1159bc8f.chunk.css",
+    "main.js": "/citizen-poet-2025/static/js/main.96f2783e.chunk.js",
+    "main.js.map": "/citizen-poet-2025/static/js/main.96f2783e.chunk.js.map",
+    "runtime-main.js": "/citizen-poet-2025/static/js/runtime-main.09a13e3e.js",
+    "runtime-main.js.map": "/citizen-poet-2025/static/js/runtime-main.09a13e3e.js.map",
+    "static/js/2.312a4733.chunk.js": "/citizen-poet-2025/static/js/2.312a4733.chunk.js",
+    "static/js/2.312a4733.chunk.js.map": "/citizen-poet-2025/static/js/2.312a4733.chunk.js.map",
+    "static/js/3.2fd477fd.chunk.js": "/citizen-poet-2025/static/js/3.2fd477fd.chunk.js",
+    "static/js/3.2fd477fd.chunk.js.map": "/citizen-poet-2025/static/js/3.2fd477fd.chunk.js.map",
     "index.html": "/citizen-poet-2025/index.html",
-    "static/css/main.6b7dd2ec.chunk.css.map": "/citizen-poet-2025/static/css/main.6b7dd2ec.chunk.css.map",
-    "static/js/2.944cb164.chunk.js.LICENSE.txt": "/citizen-poet-2025/static/js/2.944cb164.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/citizen-poet-2025/static/media/header-background.472c0bde.png",
+    "static/css/main.1159bc8f.chunk.css.map": "/citizen-poet-2025/static/css/main.1159bc8f.chunk.css.map",
+    "static/js/2.312a4733.chunk.js.LICENSE.txt": "/citizen-poet-2025/static/js/2.312a4733.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/citizen-poet-2025/static/media/modal-close-button.b9c42c3d.svg",
     "static/media/chat-bot-image.5f7287ee.png": "/citizen-poet-2025/static/media/chat-bot-image.5f7287ee.png",
     "static/media/user-avatar.614676bf.png": "/citizen-poet-2025/static/media/user-avatar.614676bf.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.82cf6c23.js",
-    "static/js/2.944cb164.chunk.js",
-    "static/css/main.6b7dd2ec.chunk.css",
-    "static/js/main.e2fa669b.chunk.js"
+    "static/js/runtime-main.09a13e3e.js",
+    "static/js/2.312a4733.chunk.js",
+    "static/css/main.1159bc8f.chunk.css",
+    "static/js/main.96f2783e.chunk.js"
   ]
 }
