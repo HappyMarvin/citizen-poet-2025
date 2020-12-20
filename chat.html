@@ -14,20 +14,34 @@
 <div class="root__content">
   <header class="header">
     <section class="header__section-one">
+      <nav class="header__menu-burger">
+        <button class="header__menu-burger-button" type="menu"></button>
+        <ul class="header__menu-burger-box">
+          <li class="header__menu-burger-item">О компании</li>
+          <li class="header__menu-burger-item">Подать инициативу</li>
+          <li class="header__menu-burger-item">Контакты</li>
+        </ul>
+      </nav>
       <div class="logo__container logo__container_header">
         <a class="logo__link" href="#">
-          <img class="logo__image logo__image_header" src="./images/citizen-logo.png"
-               alt="Логотип сервиса Гражданин-поэт 2025">
+          <img class="logo__image logo__image_header" src="./images/citizen-logo.png" alt="Логотип сервиса Гражданин-поэт 2025">
         </a>
-        <p class="logo__text">Министерство гражданских инициатив</p>
+        <p class="logo__text logo__text_header">Министерство гражданских инициатив</p>
       </div>
+      <nav class="header__links">
+        <ul class="header__menu">
+          <li class="header__menu-item"><a class="header__link" href="#">О компании</a></li>
+          <li class="header__menu-item"><a class="header__link" href="#">Подать инициативу</a></li>
+          <li class="header__menu-item"><a class="header__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
       <a class="header__user" href="#" target="_blank">
         <img class="header__user-avatar" src="./images/user-avatar.png" alt="Аватар пользователя">
       </a>
     </section>
 
   </header>
-  <div class="main-content">
+  <div class="chat-content">
     <div class="chat-container">
       <div class="chat-container__massage chat-container__massage_bot">
         <img src="./images/chat-avatar-bot.jpg"" alt="" class="chat-container__message-avatar">
@@ -76,21 +90,15 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="logo__container logo__container_footer">
-        <img class="logo__image logo__image_footer" src="./images/citizen-logo.png"
-             alt="Логотип сервиса Гражданин-поэт 2025">
+        <img class="logo__image logo__image_footer" src="./images/citizen-logo.png" alt="Логотип сервиса Гражданин-поэт 2025">
         <p class="logo__text">Министерство гражданских инициатив</p>
       </div>
       <ul class="footer__social-icons">
-        <li><a class="footer__social-icons-link" href="#"><img class="footer__social-icon"
-                                                               src="./images/twitter-icon.png" alt="Твиттер"></a></li>
-        <li><a class="footer__social-icons-link" href="#"><img class="footer__social-icon" src="./images/fb-icon.png"
-                                                               alt="Фейсбук"></a></li>
-        <li><a class="footer__social-icons-link" href="#"><img class="footer__social-icon" src="./images/vk-icon.png"
-                                                               alt="Вконтакте"></a></li>
+        <li><a class="footer__social-icons-link" href="#"><img class="footer__social-icon" src="./images/twitter-icon.png" alt="Твиттер"></a></li>
+        <li><a class="footer__social-icons-link" href="#"><img class="footer__social-icon" src="./images/fb-icon.png" alt="Фейсбук"></a></li>
+        <li><a class="footer__social-icons-link" href="#"><img class="footer__social-icon" src="./images/vk-icon.png" alt="Вконтакте"></a></li>
       </ul>
-      <p class="footer__author">&COPY; Сделано студентами <span class="footer__span"><a class="footer__author-link"
-                                                                                        href="#">Яндекс.Практикума</a></span>
-      </p>
+      <p class="footer__author">&COPY; Сделано студентами <span class="footer__span"><a class="footer__author-link" href="#">Яндекс.Практикума</a></span></p>
     </div>
   </footer>
 </div>
