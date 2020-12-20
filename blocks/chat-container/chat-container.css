@@ -1,0 +1,28 @@
+.chat-container{
+  background-color: #DCFEF9;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  /*width: 300px;*/
+  min-height: 600px;
+  font-family: 'Roboto', 'Sans-serif', 'Arial';
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 800px) {
+  .chat-container {
+    box-shadow: none;
+    width: 60%;
+    background-color:transparent;
+    min-height: 300px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .chat-container {
+    width: 80%;
+  }
+}

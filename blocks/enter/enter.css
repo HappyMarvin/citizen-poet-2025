@@ -1,0 +1,13 @@
+.enter {
+  position: relative;
+  max-width: 410px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 650px) {
+  .enter {
+    max-width: 70%;
+    box-sizing: border-box;
+  }
+}

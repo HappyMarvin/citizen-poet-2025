@@ -1,0 +1,9 @@
+.enter_chat {
+  margin: 150px 0 30px 60px;
+}
+
+@media screen and (max-width: 800px) {
+  .enter_chat {
+    margin: 0 auto;
+  }
+}

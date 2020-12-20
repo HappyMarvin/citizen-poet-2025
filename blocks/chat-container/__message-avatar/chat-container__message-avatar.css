@@ -1,0 +1,20 @@
+.chat-container__message-avatar {
+  position: absolute;
+  top: 0;
+  left: -80px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px #000 solid;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 600px) {
+  .chat-container__message-avatar {
+    top: -20px;
+    left: -20px;
+  }
+}
+

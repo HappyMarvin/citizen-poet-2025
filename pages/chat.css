@@ -1,0 +1,15 @@
+@import url(../blocks/chat-container/chat-container.css);
+@import url(../blocks/chat-container/__massage/chat-container__massage.css);
+@import url(../blocks/chat-container/__massage/chat-container__massage_user.css);
+@import url(../blocks/chat-container/__massage-text/chat-container__massage-text.css);
+@import url(../blocks/chat-container/__message-avatar/chat-container__message-avatar.css);
+@import url(../blocks/chat-container/__message-avatar/chat-container__message-avatar_user.css);
+@import url(../blocks/chat-container/__submit/chat-container__submit.css);
+@import url(../blocks/chat-container/__separator/chat-container__separator.css);
+@import url(../blocks/enter/enter.css);
+@import url(../blocks/enter/enter_chat.css);
+@import url(../blocks/enter/__avatar/enter__avatar.css);
+@import url(../blocks/enter/__text-input/enter__text-input.css);
+@import url(../blocks/enter/__submit/enter__submit.css);
+@import url(../blocks/enter/__reset/enter__reset.css);
+@import url(../blocks/main-content/main-content.css);

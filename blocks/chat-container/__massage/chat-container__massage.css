@@ -1,0 +1,13 @@
+.chat-container__massage {
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: max-content;
+  margin-left: -15px;
+  background-color: #fff;
+  margin-top: 32px;
+  position: relative;
+  padding: 10px 14px;
+  box-sizing: border-box;
+}
+

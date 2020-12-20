@@ -7,3 +7,9 @@
     background-image: url(../../../images/header-background.png);
     background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 800px) {
+    .root__content {
+        background-size: 400%;
+    }
+}
