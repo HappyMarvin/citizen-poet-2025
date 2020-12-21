@@ -26,7 +26,7 @@ function Header() {
                 <div className="header__text-container">
                     <h1 className="header__title">Министерство гражданских инициатив</h1>
                     <p className="header__description">Мы поможем сформулировать и направить запрос по стихам знаменитых классиков согластно закону номер 1111111 от 12.03.2025 “О цензуре в административных запросах.”</p>
-                    <button className="header__button"><NavLink to="/chat-bot" className="header__button-link">Начать</NavLink></button>
+                    <NavLink to="/chat-bot" className="header__button-link"><button className="header__button">Начать</button></NavLink>
                 </div>
                 <div className="header__phone-container">
                     <div className="header__phone-message-container header__phone-message-container_incoming">
@@ -57,7 +57,7 @@ function Header() {
                         <div className="header__phone-button" type="submit">Зарегистрировать</div>
                         <div className="header__phone-button" type="reset">Отмена</div>
                     </div>
-                    <button className="header__phone-button-mobile"><NavLink to="/chat-bot" className="header__button-link">Начать</NavLink></button>
+                    <NavLink to="/chat-bot" className="header__button-link"><button className="header__phone-button-mobile">Начать</button></NavLink>
                 </div>
             </section>
         </header>
