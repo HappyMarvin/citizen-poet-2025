@@ -57,7 +57,7 @@ function Header() {
                         <div className="header__phone-button" type="submit">Зарегистрировать</div>
                         <div className="header__phone-button" type="reset">Отмена</div>
                     </div>
-                    <button className="header__phone-button-mobile">Начать</button>
+                    <button className="header__phone-button-mobile"><NavLink to="/chat-bot" className="header__button-link">Начать</NavLink></button>
                 </div>
             </section>
         </header>

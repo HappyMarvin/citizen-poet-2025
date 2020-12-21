@@ -57,7 +57,7 @@ function ChatBot() {
 
                 <form action="#" className="enter enter_chat">
                     <img src={userAvatar} alt="Аватар пользователя" className="enter__avatar" />
-                    <textarea className="enter__text-input" maxlength="200" placeholder="Напишите запрос"></textarea>
+                    <textarea className="enter__text-input" maxLength="200" placeholder="Напишите запрос"></textarea>
                     <button className="enter__reset">Начать заново</button>
                     <button className="enter__submit">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

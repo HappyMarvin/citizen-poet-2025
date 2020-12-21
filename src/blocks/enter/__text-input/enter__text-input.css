@@ -9,6 +9,7 @@
   padding: 10px 10px 100px 10px;
   box-sizing: border-box;
   resize: none;
+  outline: none;
 }
 
 @media screen and (max-width: 800px) {

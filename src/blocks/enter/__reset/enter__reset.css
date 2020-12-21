@@ -8,6 +8,7 @@
   border: 2px solid #FFCCE2;
   background: none;
   cursor: pointer;
+  outline: none;
 }
 
 .enter__reset:hover {
