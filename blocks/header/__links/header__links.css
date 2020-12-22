@@ -1,0 +1,9 @@
+.header__links {
+    display: flex;
+}
+
+@media screen and (max-width: 610px) {
+    .header__links {
+        display: none;
+    }   
+}

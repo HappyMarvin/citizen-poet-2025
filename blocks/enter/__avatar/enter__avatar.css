@@ -1,0 +1,17 @@
+.enter__avatar {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  right: -30px;
+  top: -30px;
+}
+
+@media screen and (max-width: 800px) {
+  .enter__avatar {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -20px;
+    top: -20px;
+  }
+}

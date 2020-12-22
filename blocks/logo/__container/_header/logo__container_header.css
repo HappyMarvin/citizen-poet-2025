@@ -1,0 +1,22 @@
+.logo__container_header {
+    display: flex;
+    align-items: center;
+}
+
+/* @media screen and (max-width: 1360px) {
+    .logo__container_header {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .logo__container_header {
+        margin-right: 82px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo__container_header {
+        margin-right: 0;
+    }
+} */

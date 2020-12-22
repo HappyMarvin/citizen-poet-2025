@@ -1,0 +1,25 @@
+.enter__text-input {
+  max-width: 410px;
+  width: 100%;
+  min-height: 200px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 6px 6px 9px rgba(0, 0, 0, 0.2);
+  background: #DCFEF9;
+  padding: 10px 10px 100px 10px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+@media screen and (max-width: 800px) {
+  .enter__text-input {
+    min-height: 120px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .enter__text-input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}

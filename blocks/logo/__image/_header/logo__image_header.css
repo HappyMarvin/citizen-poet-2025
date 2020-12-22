@@ -1,0 +1,15 @@
+.logo__image_header {
+    margin-right: 28px;
+}
+
+@media screen and (max-width: 1280px) {
+    .logo__image_header {
+        margin-right: 16px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .logo__image_header {
+        margin-right: 0;
+    }
+}

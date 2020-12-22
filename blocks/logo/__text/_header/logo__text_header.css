@@ -1,0 +1,9 @@
+.logo__text_header {
+
+}
+
+@media screen and (max-width: 920px) {
+    .logo__text_header {
+        display: none;
+    }   
+}

@@ -1,0 +1,12 @@
+.chat-container__message-avatar_user {
+  right: -80px;
+  top: 0;
+  left: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .chat-container__message-avatar_user {
+    top: -20px;
+    right: -20px;
+  }
+}

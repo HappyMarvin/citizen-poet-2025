@@ -1,0 +1,12 @@
+.logo__text {
+    margin: 0;
+    max-width: 235px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 840px) {
+    .logo__text {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,25 @@
+.chat-container__submit {
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  background: #2F89FC;
+  width: min-content;
+  align-self: center;
+  border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  justify-self: flex-start;
+  margin: auto 0 32px 0;
+}
+
+.chat-container__submit:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+  .chat-container__submit {
+    flex-direction: column;
+    padding: 8px;
+  }
+}
