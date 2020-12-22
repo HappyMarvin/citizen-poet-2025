@@ -7,6 +7,7 @@ import ChatBot from './ChatBot';
 import PageNotFound from './PageNotFound';
 import SignUpPopup from './SignUpPopup';
 import SignInPopup from './SignInPopup';
+import UserProfile from './UserProfile';
 
 function App() {
   const [isSignupPopupOpen, setIsSignupPopupOpen] = React.useState(false);
@@ -37,8 +38,11 @@ function App() {
                 onSigninPopup={handleOpenPopupSignin}
                 />
               </Route>
-              <Route exact path="/chat-bot">
+              <Route path="/chat-bot">
                 <ChatBot />
+              </Route>
+              <Route path="/profile">
+                <UserProfile />
               </Route>
               <Route path="*">
                 <PageNotFound />

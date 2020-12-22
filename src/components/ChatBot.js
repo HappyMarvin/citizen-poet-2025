@@ -19,9 +19,9 @@ function ChatBot() {
                         <p className="logo__text logo__text_header">Министерство гражданских инициатив</p>
                     </div>
                     <HeaderNavBar />
-                    <a className="header__user" href="#" target="_blank">
+                    <NavLink to="/profile" className="header__user" href="#">
                         <img className="header__user-avatar" src={userAvatar} alt="Аватар пользователя" />
-                    </a>
+                    </NavLink>
                 </section>
             </header>
             <div className="chat-content">

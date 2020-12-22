@@ -1,0 +1,47 @@
+@import url(./__dashboard-column/profile__dashboard-column.css);
+@import url(./__dashboard-description/profile__dashboard-description.css);
+@import url(./__dashboard-title/profile__dashboard-title.css);
+@import url(./__dashboard/profile__dashboard.css);
+@import url(./__description/profile__description.css);
+@import url(./__name-about-container/profile__name-about-container.css);
+@import url(./__name-settings-container/profile__name-settings-container.css);
+@import url(./__name/profile__name.css);
+@import url(./__requests-history-button/profile__requests-history-button.css);
+@import url(./__requests-history-card-item/profile__requests-history-card-item.css);
+@import url(./__requests-history-card-title/profile__requests-history-card-title.css);
+@import url(./__requests-history-cards/profile__requests-history-cards.css);
+@import url(./__requests-history-container/profile__requests-history-container.css);
+@import url(./__requests-history-delete-button/profile__requests-history-delete-button.css);
+@import url(./__requests-history-description/profile__requests-history-description.css);
+@import url(./__requests-history-message/profile__requests-history-message.css);
+@import url(./__requests-history-status/profile__requests-history-status.css);
+@import url(./__requests-history-text-message/profile__requests-history-text-message.css);
+@import url(./__requests-history-title/profile__requests-history-title.css);
+@import url(./__requests-history/profile__requests-history.css);
+@import url(./__settings-button/profile__settings-button.css);
+@import url(./__user-about/profile__user-about.css);
+@import url(./__user-avatar/profile__user-avatar.css);
+@import url(./__user-container/profile__user-container.css);
+
+
+.profile {
+    margin: 64px 150px 116px 150px;
+}
+
+@media screen and (max-width: 1280px) {
+    .profile {
+        margin: 97px 50px 116px 50px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .profile {
+        margin: 85px 16px 132px 16px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .profile {
+        margin: 96px 16px 60px 16px;
+    }
+}

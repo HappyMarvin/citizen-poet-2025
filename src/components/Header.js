@@ -18,9 +18,9 @@ function Header() {
                     <p className="logo__text logo__text_header">Министерство гражданских инициатив</p>
                 </div>
                 <HeaderNavBar />
-                <a className="header__user" href="#" target="_blank">
+                <NavLink to="/profile" className="header__user" href="#">
                     <img className="header__user-avatar" src={userAvatar} alt="Аватар пользователя" />
-                </a>
+                </NavLink>
             </section>
             <section className="header__section-two">
                 <div className="header__text-container">
