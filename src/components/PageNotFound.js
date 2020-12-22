@@ -19,7 +19,7 @@ function PageNotFound () {
                     <p className="logo__text logo__text_header">Министерство гражданских инициатив</p>
                 </div>
                 <HeaderNavBar />
-                <NavLink to="/profile" className="header__user" href="#">
+                <NavLink to="/profile" className="header__user">
                     <img className="header__user-avatar" src={userAvatar} alt="Аватар пользователя" />
                 </NavLink>
             </section>
