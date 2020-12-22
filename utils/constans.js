@@ -1,14 +1,11 @@
 const botMessages = {
-  welcome: 'Добрый день, напишите Ваше обращение',
-  default: 'Ответ бота'
+  welcome: 'Привет, меня зовут Николай Васильевич! Напиши свой запрос и я найду его в строчках знаменитых классиков!',
+  second: 'Всё верно, регистрируем?',
+  welcomeAgain: 'Хорошо, давайт поробуем ещё раз. Напиши свой запрос.'
 }
 const messageTemplateSelector = '.message-template';
-const chatSelector = '.chat';
-const messageClasses= {
-  user: 'chat__message_user',
-  bot: 'chat__message_bot'
-}
 
-const chatListElement = document.querySelector('.chat__list');
+const chatListElement = document.querySelector('.chat-container');
+const regButton = document.querySelector('.chat-container__submit');
 
-export { messageTemplateSelector, botMessages, messageClasses, chatListElement, chatSelector }
+export { messageTemplateSelector, botMessages, chatListElement, regButton }

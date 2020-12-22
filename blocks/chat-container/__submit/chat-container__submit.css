@@ -11,6 +11,7 @@
   cursor: pointer;
   justify-self: flex-start;
   margin: auto 0 32px 0;
+  display: none;
 }
 
 .chat-container__submit:hover {

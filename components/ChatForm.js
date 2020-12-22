@@ -1,10 +1,10 @@
-import {messageClasses, botMessages, messageTemplateSelector, chatListElement} from "../utils/constans.js";
-import Message from "./Message.js";
-
 export default class chatForm {
-  constructor(formSelector) {
+  constructor(formSelector, SubmitForm, resetForm) {
     this._form = document.querySelector(formSelector);
-    this._input = this._form.querySelector('.chat__input');
+    this._input = this._form.querySelector('.enter__text-input');
+    this._buttonReset = this._form.querySelector('.enter__reset');
+    this._SubmitForm = SubmitForm;
+    this._resetForm = resetForm;
   }
 
   _clear () {
@@ -15,11 +15,13 @@ export default class chatForm {
     this._form.addEventListener('submit',(evt) => {
       evt.preventDefault();
       if (!this._input.value) return
-      let message = new Message(this._input.value, messageTemplateSelector, messageClasses.user);
-      chatListElement.append(message.createMessage());
-      message = new Message(botMessages.default, messageTemplateSelector, messageClasses.bot);
-      chatListElement.append(message.createMessage());
+      this._SubmitForm();
       this._clear();
+    })
+
+    this._buttonReset.addEventListener('click', () => {
+      this._clear();
+      this._resetForm();
     })
   }
 
