@@ -1,0 +1,34 @@
+.profile__user-avatar {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px #000 solid;
+    margin-right: 64px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 1100px) {
+    .profile__user-avatar {
+        width: 178px;
+        height: 178px;
+        margin-right: 31px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .profile__user-avatar {
+        width: 126px;
+        height: 126px;
+        margin-right: 32px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .profile__user-avatar {
+        width: 128px;
+        height: 128px;
+        margin-right: 0;
+        margin-bottom: 28px;
+    }
+}

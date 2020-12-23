@@ -1,3 +1,11 @@
 .profile__name-settings-container {
-    
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 610px) {
+    .profile__name-settings-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }

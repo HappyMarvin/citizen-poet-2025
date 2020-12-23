@@ -22,6 +22,10 @@
 @import url(./__user-about/profile__user-about.css);
 @import url(./__user-avatar/profile__user-avatar.css);
 @import url(./__user-container/profile__user-container.css);
+@import url(./__requests-history-button-mobile/profile__requests-history-button-mobile.css);
+@import url(./__settings-button-mobile/profile__settings-button-mobile.css);
+@import url(./__requests-history-text-message-span/profile__requests-history-text-message-span.css);
+@import url(./__requests-history-more-button/profile__requests-history-more-button.css);
 
 
 .profile {
@@ -36,12 +40,12 @@
 
 @media screen and (max-width: 810px) {
     .profile {
-        margin: 85px 16px 132px 16px;
+        margin: 94px 16px 132px 16px;
     }
 }
 
 @media screen and (max-width: 610px) {
     .profile {
-        margin: 96px 16px 60px 16px;
+        margin: 60px 16px 0 16px;
     }
 }

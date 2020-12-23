@@ -1,3 +1,27 @@
 .profile__requests-history-status {
-    
+    margin: 0;
+    margin-top: 12px;
+    margin-right: 128px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1100px) {
+    .profile__requests-history-status {
+        margin-right: 48px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .profile__requests-history-status {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .profile__requests-history-status {
+        margin-right: 0;
+        font-size: 18px;
+    }
 }

@@ -1,3 +1,26 @@
 .profile__requests-history-button {
-    
+    width: 268px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #2F89FC;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0 3px 3px rgb(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 810px) {
+    .profile__requests-history-button {
+        width: 245px;
+        height: 46px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .profile__requests-history-button {
+        display: none;
+    }
 }

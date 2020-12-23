@@ -1,3 +1,28 @@
 .profile__dashboard-description {
-    
+    margin: 0;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .profile__dashboard-description {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .profile__dashboard-description {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .profile__dashboard-description {
+        margin-top: 16px;
+        font-size: 16px;
+    }
 }

@@ -1,3 +1,22 @@
 .profile__requests-history-text-message {
-    
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1100px) {
+    .profile__requests-history-text-message {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .profile__requests-history-text-message {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .profile__requests-history-text-message {
+        font-size: 16px;
+    }
 }

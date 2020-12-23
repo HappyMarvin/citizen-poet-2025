@@ -1,3 +1,24 @@
 .profile__requests-history-cards {
-    
+    display: grid;
+    gap: 36px;
+    grid-template-columns: repeat(2, auto);
+}
+
+@media screen and (max-width: 1100px) {
+    .profile__requests-history-cards {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .profile__requests-history-cards {
+        gap: 32px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .profile__requests-history-cards {
+        grid-template-columns: repeat(1, auto);
+        gap: 40px;
+    }
 }

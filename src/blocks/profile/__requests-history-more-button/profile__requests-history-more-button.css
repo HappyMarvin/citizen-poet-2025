@@ -1,0 +1,17 @@
+.profile__requests-history-more-button {
+    margin: auto;
+    max-width: 268px;
+    height: 60px; 
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #2F89FC;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 18px 53px 14px 53px;
+}
+
+@media screen and (max-width: 610px) {
+    .profile__requests-history-more-button {
+        padding: 10px 40px 10px 40px;
+    }
+}

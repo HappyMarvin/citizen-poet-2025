@@ -1,3 +1,25 @@
 .profile__requests-history {
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+@media screen and (max-width: 1100px) {
+    .profile__requests-history {
+        margin-bottom: 52px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .profile__requests-history {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .profile__requests-history {
+        margin-bottom: 0;
+        justify-content: center;
+    }
 }

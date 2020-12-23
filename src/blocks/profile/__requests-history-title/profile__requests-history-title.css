@@ -1,3 +1,18 @@
 .profile__requests-history-title {
-    
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 810px) {
+    .profile__requests-history-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .profile__requests-history-title {
+        font-size: 24px;
+        margin: 48px 0 40px 0;
+    }
 }

@@ -25,14 +25,16 @@ function UserProfile() {
             </header>
             <div className="profile">
                 <div className="profile__user-container">
-                    <image className="profile__user-avatar" />
+                    <button className="profile__settings-button-mobile" type="button"/>
+                    <img className="profile__user-avatar" src={userAvatar} />
                     <div className="profile__user-about">
                         <div className="profile__name-settings-container">
                             <div className="profile__name-about-container">
                                 <h2 className="profile__name">Иванов Иван Иванович</h2>
                                 <p className="profile__description">Дата рождения: 22.01.2000</p>
                             </div>
-                            <button className="profile__settings-button" />
+                            <button className="profile__requests-history-button-mobile" type="button">Создать запрос</button>
+                            <button className="profile__settings-button" type="button" />
                         </div>
                         <div className="profile__dashboard">
                             <div className="profile__dashboard-column">
@@ -57,59 +59,60 @@ function UserProfile() {
                 <div className="profile__requests-history-container">
                     <div className="profile__requests-history">
                         <h2 className="profile__requests-history-title">История запросов</h2>
-                        <button className="profile__requests-history-button">Создать запрос</button>
+                        <button className="profile__requests-history-button" type="button">Создать запрос</button>
                     </div>
                     <div className="profile__requests-history-cards">
                         <div className="profile__requests-history-card-item">
                             <h3 className="profile__requests-history-card-title">Заменить скамейку у дома</h3>
                             <div className="profile__requests-history-message">
-                                <p className="profile__requests-history-text-message">Утраты сердца заменитьЗеленой садовой скамейки
-В ночь таежную у костраСтучащаяся пальчиком в дома</p>
+                                <p className="profile__requests-history-text-message">Утраты сердца<span className="profile__requests-history-text-message-span"> заменить </span>Зеленой садовой<span className="profile__requests-history-text-message-span"> скамейки </span>
+В ночь таежную<span className="profile__requests-history-text-message-span"> у </span>костра Стучащаяся пальчиком в<span className="profile__requests-history-text-message-span"> дома</span></p>
                             </div>
                             <p className="profile__requests-history-description">Дата подачи: 30.02.2025</p>
                             <p className="profile__requests-history-status">Статус: запрос находится на рассмотрении</p>
-                            <button className="profile__requests-history-delete-button" />
+                            <button className="profile__requests-history-delete-button" type="button"/>
                         </div>
                         <div className="profile__requests-history-card-item">
                             <h3 className="profile__requests-history-card-title">Заменить скамейку у дома</h3>
                             <div className="profile__requests-history-message">
-                                <p className="profile__requests-history-text-message">Утраты сердца заменитьЗеленой садовой скамейки
-В ночь таежную у костраСтучащаяся пальчиком в дома</p>
+                                <p className="profile__requests-history-text-message">Утраты сердца<span className="profile__requests-history-text-message-span"> заменить </span>Зеленой садовой<span className="profile__requests-history-text-message-span"> скамейки </span>
+В ночь таежную<span className="profile__requests-history-text-message-span"> у </span>костра Стучащаяся пальчиком в<span className="profile__requests-history-text-message-span"> дома</span></p>
                             </div>
                             <p className="profile__requests-history-description">Дата подачи: 30.02.2025</p>
                             <p className="profile__requests-history-status">Статус: запрос находится на рассмотрении</p>
-                            <button className="profile__requests-history-delete-button" />
+                            <button className="profile__requests-history-delete-button" type="button"/>
                         </div>
                         <div className="profile__requests-history-card-item">
                             <h3 className="profile__requests-history-card-title">Заменить скамейку у дома</h3>
                             <div className="profile__requests-history-message">
-                                <p className="profile__requests-history-text-message">Утраты сердца заменитьЗеленой садовой скамейки
-В ночь таежную у костраСтучащаяся пальчиком в дома</p>
+                                <p className="profile__requests-history-text-message">Утраты сердца<span className="profile__requests-history-text-message-span"> заменить </span>Зеленой садовой<span className="profile__requests-history-text-message-span"> скамейки </span>
+В ночь таежную<span className="profile__requests-history-text-message-span"> у </span>костра Стучащаяся пальчиком в<span className="profile__requests-history-text-message-span"> дома</span></p>
                             </div>
                             <p className="profile__requests-history-description">Дата подачи: 30.02.2025</p>
                             <p className="profile__requests-history-status">Статус: запрос находится на рассмотрении</p>
-                            <button className="profile__requests-history-delete-button" />
+                            <button className="profile__requests-history-delete-button" type="button"/>
                         </div>
                         <div className="profile__requests-history-card-item">
                             <h3 className="profile__requests-history-card-title">Заменить скамейку у дома</h3>
                             <div className="profile__requests-history-message">
-                                <p className="profile__requests-history-text-message">Утраты сердца заменитьЗеленой садовой скамейки
-В ночь таежную у костраСтучащаяся пальчиком в дома</p>
+                                <p className="profile__requests-history-text-message">Утраты сердца<span className="profile__requests-history-text-message-span"> заменить </span>Зеленой садовой<span className="profile__requests-history-text-message-span"> скамейки </span>
+В ночь таежную<span className="profile__requests-history-text-message-span"> у </span>костра Стучащаяся пальчиком в<span className="profile__requests-history-text-message-span"> дома</span></p>
                             </div>
                             <p className="profile__requests-history-description">Дата подачи: 30.02.2025</p>
                             <p className="profile__requests-history-status">Статус: запрос находится на рассмотрении</p>
-                            <button className="profile__requests-history-delete-button" />
+                            <button className="profile__requests-history-delete-button" type="button"/>
                         </div>
                         <div className="profile__requests-history-card-item">
                             <h3 className="profile__requests-history-card-title">Заменить скамейку у дома</h3>
                             <div className="profile__requests-history-message">
-                                <p className="profile__requests-history-text-message">Утраты сердца заменитьЗеленой садовой скамейки
-В ночь таежную у костраСтучащаяся пальчиком в дома</p>
+                                <p className="profile__requests-history-text-message">Утраты сердца<span className="profile__requests-history-text-message-span"> заменить </span>Зеленой садовой<span className="profile__requests-history-text-message-span"> скамейки </span>
+В ночь таежную<span className="profile__requests-history-text-message-span"> у </span>костра Стучащаяся пальчиком в<span className="profile__requests-history-text-message-span"> дома</span></p>
                             </div>
                             <p className="profile__requests-history-description">Дата подачи: 30.02.2025</p>
                             <p className="profile__requests-history-status">Статус: запрос находится на рассмотрении</p>
-                            <button className="profile__requests-history-delete-button" />
+                            <button className="profile__requests-history-delete-button" type="button"/>
                         </div>
+                        <button className="profile__requests-history-more-button">Посмотреть еще</button>
                     </div>
                 </div>
             </div>
