@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/citizen-poet-2025/static/css/main.a26101ba.chunk.css",
-    "main.js": "/citizen-poet-2025/static/js/main.b4d21322.chunk.js",
-    "main.js.map": "/citizen-poet-2025/static/js/main.b4d21322.chunk.js.map",
+    "main.css": "/citizen-poet-2025/static/css/main.ac2224d5.chunk.css",
+    "main.js": "/citizen-poet-2025/static/js/main.5f74ad87.chunk.js",
+    "main.js.map": "/citizen-poet-2025/static/js/main.5f74ad87.chunk.js.map",
     "runtime-main.js": "/citizen-poet-2025/static/js/runtime-main.09a13e3e.js",
     "runtime-main.js.map": "/citizen-poet-2025/static/js/runtime-main.09a13e3e.js.map",
     "static/js/2.9c97b770.chunk.js": "/citizen-poet-2025/static/js/2.9c97b770.chunk.js",
@@ -10,16 +10,16 @@
     "static/js/3.2fd477fd.chunk.js": "/citizen-poet-2025/static/js/3.2fd477fd.chunk.js",
     "static/js/3.2fd477fd.chunk.js.map": "/citizen-poet-2025/static/js/3.2fd477fd.chunk.js.map",
     "index.html": "/citizen-poet-2025/index.html",
-    "static/css/main.a26101ba.chunk.css.map": "/citizen-poet-2025/static/css/main.a26101ba.chunk.css.map",
+    "static/css/main.ac2224d5.chunk.css.map": "/citizen-poet-2025/static/css/main.ac2224d5.chunk.css.map",
     "static/js/2.9c97b770.chunk.js.LICENSE.txt": "/citizen-poet-2025/static/js/2.9c97b770.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/citizen-poet-2025/static/media/modal-close-button.b9c42c3d.svg",
+    "static/media/index.css": "/citizen-poet-2025/static/media/tool.b8ea546c.png",
     "static/media/chat-bot-image.5f7287ee.png": "/citizen-poet-2025/static/media/chat-bot-image.5f7287ee.png",
     "static/media/user-avatar.614676bf.png": "/citizen-poet-2025/static/media/user-avatar.614676bf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.09a13e3e.js",
     "static/js/2.9c97b770.chunk.js",
-    "static/css/main.a26101ba.chunk.css",
-    "static/js/main.b4d21322.chunk.js"
+    "static/css/main.ac2224d5.chunk.css",
+    "static/js/main.5f74ad87.chunk.js"
   ]
 }
