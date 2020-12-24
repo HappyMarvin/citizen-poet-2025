@@ -5,12 +5,13 @@
     width: 131px;
     height: 37px;
     border-radius: 10px;
-    background-color: #FFCCE2;
+    background-color: #84BAFF;
     font-size: 12px;
     font-weight: 400;
     outline: none;
     border: none;
     margin-right: 16px;
+    color: #000;
 }
 
 .header__phone-button:last-of-type {

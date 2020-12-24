@@ -1,6 +1,6 @@
 .header__phone-message_incoming {
     max-width: 319px;
-    background-color: #fff;
+    background: #30353A;
 }
 
 @media screen and (max-width: 1280px) {

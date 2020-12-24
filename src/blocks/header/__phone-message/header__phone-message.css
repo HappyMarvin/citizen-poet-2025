@@ -1,4 +1,4 @@
 .header__phone-message {
     border-radius: 10px;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 20px rgba(31, 34, 37, 0.7), -3px -3px 20px rgba(82, 86, 89, 0.5);
 }

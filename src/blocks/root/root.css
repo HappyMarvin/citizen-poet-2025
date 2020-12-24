@@ -1,4 +1,6 @@
 @import url(./__content/root__content.css);
+@import url(../../vendor/fonts/fonts.css);
+
 
 /* header, span, div, nav, p, h1, h2, h3, h4, a, section, ul, li, img, iframe, input, textarea, button {
     outline: 1px solid;
@@ -6,7 +8,8 @@
 } */
 
 .root {
-    font-family: 'Roboto', 'Sans-serif', 'Arial';
-    background-color: #fff;
-    color: #000;
+    font-family: 'Monsterrat', 'Sans-serif', 'Arial';
+    font-weight: 400;
+    background: linear-gradient(to bottom, #30353A, #56595C calc(100% - 174px), #30353A calc(100% - 174px));
+    color: #fff;
 }

@@ -1,8 +1,8 @@
 .cards__description {
-    margin: 0;
     font-size: 20px;
     font-weight: 400;
     margin: 0 16px 40px 16px;
+    font-family: 'Vollkorn';
 }
 
 @media screen and (max-width: 1280px) {

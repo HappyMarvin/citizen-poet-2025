@@ -5,11 +5,12 @@
 @import url(./__author/footer__author.css);
 @import url(./__span/footer__span.css);
 @import url(./__author-link/footer__author-link.css);
+@import url(./__free/footer__free.css);
+
 
 .footer {
     margin-top: 116px;
     padding: 0 150px 0 150px;
-    background-color: #DCFEF9;
 }
 
 /*@media screen and (max-width: 800px) {*/
@@ -19,7 +20,6 @@
     .footer {
         margin-top: 104px;
         padding: 0 50px 0 50px;
-        background-color: #DCFEF9;
     }
 }
 

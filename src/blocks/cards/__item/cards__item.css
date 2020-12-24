@@ -1,14 +1,15 @@
 .cards__item {
     width: 352px;
     height: 392px;
-    background-color: #DCFEF9;
     margin-right: 42px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.1);
+    background: #30353A;
+    box-shadow: -5px -5px 20px rgba(255, 247, 247, 0.1), 7px 7px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
 }
 
 .cards__item:last-of-type {

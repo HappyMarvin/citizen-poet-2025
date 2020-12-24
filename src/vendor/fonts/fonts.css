@@ -1,17 +1,23 @@
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Monsterrat';
     font-weight: 400;
-    src: url(./Roboto-Regular.ttf);
+    src: url(./Montserrat-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Roboto';
-    font-weight: 500;
-    src: url(./Roboto-Medium.ttf);
-}
-
-@font-face {
-    font-family: 'Roboto';
+    font-family: 'Monsterrat';
     font-weight: 700;
-    src: url(./Roboto-Bold.ttf);
+    src: url(./Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Monsterrat';
+    font-weight: 600;
+    src: url(./Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Vollkorn';
+    font-weight: 400;
+    src: url(./Vollkorn-Medium.ttf);
 }

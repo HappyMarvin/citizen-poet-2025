@@ -7,7 +7,7 @@
     cursor: pointer;
     outline: none;
     border: none;
-    box-shadow: 0 3px 3px rgb(0, 0, 0, 0.3);
+    box-shadow: -5px -5px 20px #265A9D, 5px 5px 20px rgba(31, 34, 37, 0.61);
     color: #fff;
     font-size: 36px;
     font-weight: 700;

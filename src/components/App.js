@@ -64,6 +64,7 @@ function App() {
                 />
               </Route>
             </Switch>
+
             <Footer />
             <SignUpPopup
             isOpen={isSignupPopupOpen}
