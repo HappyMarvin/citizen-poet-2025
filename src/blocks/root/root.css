@@ -13,3 +13,9 @@
     background: linear-gradient(to bottom, #30353A, #56595C calc(100% - 174px), #30353A calc(100% - 174px));
     color: #fff;
 }
+
+@media screen and (max-width: 610px) {
+    .root {
+        background: linear-gradient(to bottom, #30353A, #56595C calc(100% - 250px), #30353A calc(100% - 250px));
+    }
+}
