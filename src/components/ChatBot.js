@@ -6,12 +6,14 @@ import citizenLogo from '../images/citizen-logo.png';
 import userAvatar from '../images/user-avatar.png';
 import chatBotAvatar from '../images/chat-bot-image.png';
 
-function ChatBot() {
+function ChatBot(props) {
     return (
         <>
             <header className="header">
                 <section className="header__section-one">
-                    <HeaderNavBarBurger />
+                    <HeaderNavBarBurger
+                    onMenuMobile={props.onMenuMobile}
+                    />
                     <div className="logo__container logo__container_header">
                         <NavLink to="/" className="logo__link">
                             <img className="logo__image logo__image_header" src={citizenLogo} alt="Логотип сервиса Гражданин-поэт 2025" />

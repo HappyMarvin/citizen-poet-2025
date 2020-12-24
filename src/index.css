@@ -10,6 +10,8 @@
 @import url(./blocks/popup/popup.css);
 @import url(./blocks/popup/_is-open/popup_is-open.css);
 @import url(./blocks/profile/profile.css);
+@import url(./blocks/menu-mobile/menu-mobile.css);
+@import url(./blocks/menu-mobile/_is-open/menu-mobile_is-open.css);
 
 @import url(./blocks/chat-container/chat-container.css);
 @import url(./blocks/chat-container/__massage/chat-container__massage.css);

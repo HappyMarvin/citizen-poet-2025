@@ -1,0 +1,10 @@
+.menu-mobile__item {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 44px; 
+    margin: 35px 0 44px 20px;
+}
+
+.menu-mobile__item:last-child {
+    margin-bottom: 0;
+}

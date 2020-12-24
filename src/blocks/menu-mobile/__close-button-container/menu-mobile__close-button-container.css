@@ -1,0 +1,10 @@
+.menu-mobile__close-button-container {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+}

@@ -1,0 +1,4 @@
+.menu-mobile_is-open {
+    opacity: 1;
+    transform: translateX(0);
+}

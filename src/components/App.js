@@ -8,10 +8,13 @@ import PageNotFound from './PageNotFound';
 import SignUpPopup from './SignUpPopup';
 import SignInPopup from './SignInPopup';
 import UserProfile from './UserProfile';
+import MenuMobile from './MenuMobile';
+import HeaderNavBarBurger from './HeaderNavBarBurger';
 
 function App() {
   const [isSignupPopupOpen, setIsSignupPopupOpen] = React.useState(false);
   const [isSigninPopupOpen, setIsSigninPopupOpen] = React.useState(false);
+  const [isMenuMobileOpen, setIsMenuMobileOpen] = React.useState(false);
   
   function handleOpenPopupSignup() {
     setIsSignupPopupOpen(true);
@@ -21,9 +24,14 @@ function App() {
     setIsSigninPopupOpen(true);
   }
 
+  function handleOpenMenuMobile() {
+    setIsMenuMobileOpen(true);
+  }
+
   function closeAllPopups() {
     setIsSignupPopupOpen(false);
     setIsSigninPopupOpen(false);
+    setIsMenuMobileOpen(false);
   }
 
   return (
@@ -32,20 +40,28 @@ function App() {
         <div className="root__content">
             <Switch>
               <Route exact path="/">
-                <Header />
+                <Header
+                onMenuMobile={handleOpenMenuMobile}
+                />
                 <Main
                 onSignupPopup={handleOpenPopupSignup}
                 onSigninPopup={handleOpenPopupSignin}
                 />
               </Route>
               <Route path="/chat-bot">
-                <ChatBot />
+                <ChatBot
+                onMenuMobile={handleOpenMenuMobile}
+                />
               </Route>
               <Route path="/profile">
-                <UserProfile />
+                <UserProfile
+                onMenuMobile={handleOpenMenuMobile}
+                />
               </Route>
               <Route path="*">
-                <PageNotFound />
+                <PageNotFound
+                onMenuMobile={handleOpenMenuMobile}
+                />
               </Route>
             </Switch>
             <Footer />
@@ -55,6 +71,10 @@ function App() {
             />
             <SignInPopup
             isOpen={isSigninPopupOpen}
+            onClose={closeAllPopups}
+            />
+            <MenuMobile
+            isOpen={isMenuMobileOpen}
             onClose={closeAllPopups}
             />
         </div> 
