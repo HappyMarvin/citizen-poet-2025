@@ -23,8 +23,8 @@ class Api {
         });
     }
 
-    updateUser({ name, birthday }) {
-        return fetch(`${this._url}users`, {
+    updateUser({name, birthday}) {
+        return fetch(`${this._url}users/5fe4dd99dabdf700174b473a`, {
             method: 'PATCH',
             headers: this._headers,
             body: JSON.stringify({
