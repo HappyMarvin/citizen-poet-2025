@@ -7,6 +7,7 @@ import ChatBot from './ChatBot';
 import PageNotFound from './PageNotFound';
 import SignUpPopup from './SignUpPopup';
 import SignInPopup from './SignInPopup';
+import UpdateUserPopup from './UpdateUserPopup';
 import UserProfile from './UserProfile';
 import MenuMobile from './MenuMobile';
 import api from '../utils/api';
@@ -16,6 +17,7 @@ import { CurrentUserContext } from '../contexts/CurrentUserContext';
 function App() {
   const [isSignupPopupOpen, setIsSignupPopupOpen] = React.useState(false);
   const [isSigninPopupOpen, setIsSigninPopupOpen] = React.useState(false);
+  const [isUpdateUserPopupOpen, setIsUpdateUserPopupOpen] = React.useState(false);
   const [isMenuMobileOpen, setIsMenuMobileOpen] = React.useState(false);
   const [requests, setRequests] = React.useState([]);
   const [currentUser, setCurrentUser] = React.useState({});
@@ -28,6 +30,10 @@ function App() {
     setIsSigninPopupOpen(true);
   }
 
+  function handleOpenPopupUpdateUser() {
+    setIsUpdateUserPopupOpen(true);
+  }
+
   function handleOpenMenuMobile() {
     setIsMenuMobileOpen(true);
   }
@@ -36,6 +42,18 @@ function App() {
     setIsSignupPopupOpen(false);
     setIsSigninPopupOpen(false);
     setIsMenuMobileOpen(false);
+    setIsUpdateUserPopupOpen(false);
+  }
+
+  function handleUpdateUser(newUserInfo) {
+    api.updateUser(newUserInfo)
+      .then((res) => {
+        setCurrentUser(res);
+        closeAllPopups();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   function handleUserRequestSubmit(requestInfo) {
@@ -96,6 +114,7 @@ function App() {
                   <UserProfile
                   onMenuMobile={handleOpenMenuMobile}
                   onRequestDelete={handleRequestDelete}
+                  onUpdateUserPopup={handleOpenPopupUpdateUser}
                   requests={requests}
                   />
                 </Route>
@@ -113,6 +132,11 @@ function App() {
               <SignInPopup
               isOpen={isSigninPopupOpen}
               onClose={closeAllPopups}
+              />
+              <UpdateUserPopup
+              isOpen={isUpdateUserPopupOpen}
+              onClose={closeAllPopups}
+              onUpdateUser={handleUpdateUser}
               />
               <MenuMobile
               isOpen={isMenuMobileOpen}

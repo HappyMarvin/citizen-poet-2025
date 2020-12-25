@@ -23,6 +23,23 @@ class Api {
         });
     }
 
+    updateUser({ name, birthday }) {
+        return fetch(`${this._url}users`, {
+            method: 'PATCH',
+            headers: this._headers,
+            body: JSON.stringify({
+                name: name,
+                birthday: birthday
+            })
+        })
+        .then((res) => {
+            if (res.ok) {
+                return res.json();
+            }
+            return Promise.reject('Произошла ошибка при создании пользователя');
+        });
+    }
+
     getUserById(id) {
         return fetch(`${this._url}users/${id}`, {
             method: 'GET',

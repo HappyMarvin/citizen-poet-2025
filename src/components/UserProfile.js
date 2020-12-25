@@ -37,10 +37,10 @@ function UserProfile(props) {
                         <div className="profile__name-settings-container">
                             <div className="profile__name-about-container">
                                 <h2 className="profile__name">{currentUser.name}</h2>
-                                <p className="profile__description">Дата рождения: 22.01.2000</p>
+                                <p className="profile__description">Дата рождения: <span>{currentUser.birthday}</span></p>
                             </div>
                             <button className="profile__requests-history-button-mobile" type="button">Создать запрос</button>
-                            <button className="profile__settings-button" type="button" />
+                            <button className="profile__settings-button" type="button" onClick={props.onUpdateUserPopup}/>
                         </div>
                         <div className="profile__dashboard">
                             <div className="profile__dashboard-column">

@@ -14,6 +14,7 @@
 @import url(./__title/popup__title.css);
 @import url(./_type/popup_type_signin.css);
 @import url(./_type/popup_type_signup.css);
+@import url(./_type/popup_type_user-update.css);
 
 .popup {
     position: fixed;
