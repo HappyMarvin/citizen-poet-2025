@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/citizen-poet-2025/static/css/main.862f9286.chunk.css",
-    "main.js": "/citizen-poet-2025/static/js/main.eb99b640.chunk.js",
-    "main.js.map": "/citizen-poet-2025/static/js/main.eb99b640.chunk.js.map",
+    "main.js": "/citizen-poet-2025/static/js/main.aeb083d0.chunk.js",
+    "main.js.map": "/citizen-poet-2025/static/js/main.aeb083d0.chunk.js.map",
     "runtime-main.js": "/citizen-poet-2025/static/js/runtime-main.2f9253fb.js",
     "runtime-main.js.map": "/citizen-poet-2025/static/js/runtime-main.2f9253fb.js.map",
     "static/js/2.6fade948.chunk.js": "/citizen-poet-2025/static/js/2.6fade948.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.2f9253fb.js",
     "static/js/2.6fade948.chunk.js",
     "static/css/main.862f9286.chunk.css",
-    "static/js/main.eb99b640.chunk.js"
+    "static/js/main.aeb083d0.chunk.js"
   ]
 }
