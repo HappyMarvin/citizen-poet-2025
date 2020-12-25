@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/citizen-poet-2025/static/css/main.e424d58e.chunk.css",
+    "main.css": "/citizen-poet-2025/static/css/main.dfc26044.chunk.css",
     "main.js": "/citizen-poet-2025/static/js/main.a33c9e17.chunk.js",
     "main.js.map": "/citizen-poet-2025/static/js/main.a33c9e17.chunk.js.map",
     "runtime-main.js": "/citizen-poet-2025/static/js/runtime-main.09a13e3e.js",
@@ -10,7 +10,7 @@
     "static/js/3.2fd477fd.chunk.js": "/citizen-poet-2025/static/js/3.2fd477fd.chunk.js",
     "static/js/3.2fd477fd.chunk.js.map": "/citizen-poet-2025/static/js/3.2fd477fd.chunk.js.map",
     "index.html": "/citizen-poet-2025/index.html",
-    "static/css/main.e424d58e.chunk.css.map": "/citizen-poet-2025/static/css/main.e424d58e.chunk.css.map",
+    "static/css/main.dfc26044.chunk.css.map": "/citizen-poet-2025/static/css/main.dfc26044.chunk.css.map",
     "static/js/2.0cd0baa4.chunk.js.LICENSE.txt": "/citizen-poet-2025/static/js/2.0cd0baa4.chunk.js.LICENSE.txt",
     "static/media/index.css": "/citizen-poet-2025/static/media/modal-close-button.b9c42c3d.svg",
     "static/media/card1.e1c3b255.png": "/citizen-poet-2025/static/media/card1.e1c3b255.png",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.09a13e3e.js",
     "static/js/2.0cd0baa4.chunk.js",
-    "static/css/main.e424d58e.chunk.css",
+    "static/css/main.dfc26044.chunk.css",
     "static/js/main.a33c9e17.chunk.js"
   ]
 }
