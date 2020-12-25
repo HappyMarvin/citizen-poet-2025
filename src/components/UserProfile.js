@@ -91,7 +91,7 @@ function UserProfile(props) {
 В ночь таежную<span className="profile__requests-history-text-message-span"> у </span>костра Стучащаяся пальчиком в<span className="profile__requests-history-text-message-span"> дома</span></p>
                             </div>
                             <p className="profile__requests-history-description">Дата подачи: 30.02.2025</p>
-                            <p className="profile__requests-history-status">Статус: запрос находится на рассмотрении</p>
+                            <p className="profile__requests-history-status profile__requests-history-status_solution_yes">Статус: принято положительное решение</p>
                             <button className="profile__requests-history-delete-button" type="button"/>
                         </div>
                         <div className="profile__requests-history-card-item">
@@ -101,7 +101,7 @@ function UserProfile(props) {
 В ночь таежную<span className="profile__requests-history-text-message-span"> у </span>костра Стучащаяся пальчиком в<span className="profile__requests-history-text-message-span"> дома</span></p>
                             </div>
                             <p className="profile__requests-history-description">Дата подачи: 30.02.2025</p>
-                            <p className="profile__requests-history-status">Статус: запрос находится на рассмотрении</p>
+                            <p className="profile__requests-history-status profile__requests-history-status_solution_yes">Статус: принято положительное решение</p>
                             <button className="profile__requests-history-delete-button" type="button"/>
                         </div>
                         <div className="profile__requests-history-card-item">
@@ -111,7 +111,7 @@ function UserProfile(props) {
 В ночь таежную<span className="profile__requests-history-text-message-span"> у </span>костра Стучащаяся пальчиком в<span className="profile__requests-history-text-message-span"> дома</span></p>
                             </div>
                             <p className="profile__requests-history-description">Дата подачи: 30.02.2025</p>
-                            <p className="profile__requests-history-status">Статус: запрос находится на рассмотрении</p>
+                            <p className="profile__requests-history-status profile__requests-history-status_solution_no">Статус: отрицательное решение</p>
                             <button className="profile__requests-history-delete-button" type="button"/>
                         </div>
                         <button className="profile__requests-history-more-button">Посмотреть еще</button>

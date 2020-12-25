@@ -2,11 +2,11 @@
     width: 268px;
     height: 60px;
     border-radius: 10px;
-    background-color: #2F89FC;
+    background: #2F89FC;
+    box-shadow: 5px 5px 48px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(46, 133, 243, 0.42);
     cursor: pointer;
     outline: none;
     border: none;
-    box-shadow: 0 3px 3px rgb(0, 0, 0, 0.3);
     color: #fff;
     font-size: 20px;
     font-weight: 400;
