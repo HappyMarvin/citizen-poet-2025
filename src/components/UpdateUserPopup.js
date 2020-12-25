@@ -31,7 +31,7 @@ function UpdateUserPopup(props) {
     return (
             <Popup isOpen={props.isOpen} name="user-update" title="Поменять данные" onClose={props.onClose} onSubmit={handleSubmit}>
                 <input className="popup__input" type="text" placeholder="Имя и фамилия" required value={newName} onChange={handleChangeName}/>
-                <input className="popup__input" type="date" placeholder="Дата рождения" required value={newBirthday} onChange={handleChangeBirthday}/>
+                <input className="popup__input popup__input-birthday" type="date" placeholder="Дата рождения" required value={newBirthday} onChange={handleChangeBirthday}/>
                 <button className="popup__submit-button" type="submit">Сохранить</button>
                 <button className="popup__close-button" type="reset" onClick={props.onClose} />
             </Popup>

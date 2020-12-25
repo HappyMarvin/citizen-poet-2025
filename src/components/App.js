@@ -8,6 +8,7 @@ import PageNotFound from './PageNotFound';
 import SignUpPopup from './SignUpPopup';
 import SignInPopup from './SignInPopup';
 import UpdateUserPopup from './UpdateUserPopup';
+import SuccessPopup from './SuccessPopup';
 import UserProfile from './UserProfile';
 import MenuMobile from './MenuMobile';
 import api from '../utils/api';
@@ -18,6 +19,7 @@ function App() {
   const [isSignupPopupOpen, setIsSignupPopupOpen] = React.useState(false);
   const [isSigninPopupOpen, setIsSigninPopupOpen] = React.useState(false);
   const [isUpdateUserPopupOpen, setIsUpdateUserPopupOpen] = React.useState(false);
+  const [isSuccessPopupOpen, setIsSuccessPopupOpen] = React.useState(false);
   const [isMenuMobileOpen, setIsMenuMobileOpen] = React.useState(false);
   const [requests, setRequests] = React.useState([]);
   const [currentUser, setCurrentUser] = React.useState({});
@@ -34,6 +36,10 @@ function App() {
     setIsUpdateUserPopupOpen(true);
   }
 
+  function handleOpenSuccessPopup() {
+    setIsSuccessPopupOpen(true);
+  }
+
   function handleOpenMenuMobile() {
     setIsMenuMobileOpen(true);
   }
@@ -43,6 +49,7 @@ function App() {
     setIsSigninPopupOpen(false);
     setIsMenuMobileOpen(false);
     setIsUpdateUserPopupOpen(false);
+    setIsSuccessPopupOpen(false);
   }
 
   function handleUpdateUser(newUserInfo) {
@@ -108,6 +115,7 @@ function App() {
                   <ChatBot
                   onMenuMobile={handleOpenMenuMobile}
                   onSendRequestText={handleUserRequestSubmit}
+                  onSuccessPopup={handleOpenSuccessPopup}
                   />
                 </Route>
                 <Route path="/profile">
@@ -137,6 +145,10 @@ function App() {
               isOpen={isUpdateUserPopupOpen}
               onClose={closeAllPopups}
               onUpdateUser={handleUpdateUser}
+              />
+              <SuccessPopup
+              isOpen={isSuccessPopupOpen}
+              onClose={closeAllPopups}
               />
               <MenuMobile
               isOpen={isMenuMobileOpen}
