@@ -11,9 +11,10 @@
   height: 40px;
   border-radius: 20px;
   border: none;
-  background: #FFCCE2;
+  background: #2F89FC;
   cursor: pointer;
   outline: none;
+  box-shadow: 5px 5px 20px rgba(31, 34, 37, 0.7), -3px -3px 20px rgba(82, 86, 89, 0.5);
 }
 
 .enter__submit:hover {

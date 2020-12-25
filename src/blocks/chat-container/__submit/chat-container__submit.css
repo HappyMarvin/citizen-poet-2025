@@ -7,14 +7,14 @@
   width: min-content;
   align-self: center;
   border: none;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 48px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(46, 133, 243, 0.42);
   cursor: pointer;
   justify-self: flex-start;
   margin: auto 0 32px 0;
 }
 
 .chat-container__submit:hover {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 48px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(46, 133, 243, 0.6);
 }
 
 @media screen and (max-width: 800px) {
