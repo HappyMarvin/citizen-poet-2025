@@ -1,3 +1,16 @@
 .profile__requests-history-status_solution_yes {
   color: #00CD2D;
 }
+
+.profile__requests-history-status_solution_yes:before {
+  content: ' ';
+  background-image: url(../../../../images/down-status.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 1.3em;
+  width: .9em;
+  margin-left: .2em;
+  background-size: contain;
+  cursor: pointer;
+  float: right;
+}
