@@ -65,7 +65,7 @@ function UserProfile(props) {
                 <div className="profile__requests-history-container">
                     <div className="profile__requests-history">
                         <h2 className="profile__requests-history-title">История запросов</h2>
-                        <button className="profile__requests-history-button" type="button">Создать запрос</button>
+                        <NavLink to="/chat-bot"><button className="profile__requests-history-button" type="button">Создать запрос</button></NavLink>
                     </div>
                     <div className="profile__requests-history-cards">
                         { props.requests.map((request) => (
