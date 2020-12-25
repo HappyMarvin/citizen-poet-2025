@@ -7,6 +7,26 @@ import userAvatar from '../images/user-avatar.png';
 import chatBotAvatar from '../images/chat-bot-image.png';
 
 function ChatBot(props) {
+    const [requestTitle, setRequestTitle] = React.useState('');
+    const [requestText, setRequestText] = React.useState('');
+
+    function handleRequestTitle(e) {
+        setRequestTitle(e.target.value);
+    }
+
+    function handleRequestText(e) {
+        setRequestText(e.target.value);
+    }
+
+    function handleRequestTextSubmit(e) {
+        e.preventDefault();
+        props.onSendRequestText({
+            title: requestTitle,
+            text: requestText,
+        });
+    }
+
+
     return (
         <>
             <header className="header">
@@ -57,9 +77,10 @@ function ChatBot(props) {
 
                 </div>
 
-                <form action="#" className="enter enter_chat">
+                <form action="#" className="enter enter_chat" onSubmit={handleRequestTextSubmit}>
                     <img src={userAvatar} alt="Аватар пользователя" className="enter__avatar" />
-                    <textarea className="enter__text-input" maxLength="200" placeholder="Напишите запрос"></textarea>
+                    <textarea className="enter__title-input" maxLength="30" placeholder="Напишите заголовок запроса" value={requestTitle} onChange={handleRequestTitle}/>
+                    <textarea className="enter__text-input" maxLength="200" placeholder="Напишите запрос" value={requestText} onChange={handleRequestText} />
                     <button className="enter__reset">Начать заново</button>
                     <button className="enter__submit">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
