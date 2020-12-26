@@ -27,7 +27,8 @@ function Header(props) {
             <section className="header__section-two">
                 <div className="header__text-container">
                     <h1 className="header__title">Министерство гражданских инициатив</h1>
-                    <p className="header__description">Мы поможем сформулировать и направить запрос по стихам знаменитых классиков согластно закону номер 1111111 от 12.03.2025 “О цензуре в административных запросах.”</p>
+                    <p className="header__description">Мы поможем сформулировать и направить запрос по стихам знаменитых классиков
+                        согластно федеральному закону № 134-ФЗ от 12.03.2025 “О цензуре в административных запросах.”</p>
                     <NavLink to="/chat-bot" className="header__button-link"><button className="header__button">Начать</button></NavLink>
                 </div>
                 <div className="header__phone-container">

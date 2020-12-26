@@ -16,7 +16,7 @@
     padding: 0;
     margin: 0;
     border-top: 2px solid #000;
-    background-color: #C1DAFC;
+    background: linear-gradient(to bottom, #30353A, #56595C);
     opacity: 0;
     transform: translateX(-100%);
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);

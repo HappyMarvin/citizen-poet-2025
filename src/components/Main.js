@@ -14,13 +14,13 @@ function Main(props) {
                 </li>
                 <li className="cards__item">
                     <img className="cards__image cards__image_two" src={cardTwo} alt="Закон" />
-                    <h2 className="cards__title">Закон</h2>
-                    <p className="cards__description">Мы поможем сформулировать и направить запрос по стихам знаменитых классиков</p>
+                    <h2 className="cards__title">Сроки</h2>
+                    <p className="cards__description">Срок рассмотрения инициативы составляет не более 10 рабочих дней </p>
                 </li>
                 <li className="cards__item">
                     <img className="cards__image cards__image_three" src={cardThree} alt="О сервисе" />
-                    <h2 className="cards__title">О сервисе</h2>
-                    <p className="cards__description">Мы поможем сформулировать и направить запрос по стихам знаменитых классиков</p>
+                    <h2 className="cards__title">Отчет</h2>
+                    <p className="cards__description">Подробный отчет о выполненной работе вы можете найти в личном кабинете</p>
                 </li>
             </ul>
             <div className="content__buttons">
