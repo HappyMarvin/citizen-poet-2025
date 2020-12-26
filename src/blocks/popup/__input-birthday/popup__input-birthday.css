@@ -1,0 +1,3 @@
+.popup__input-birthday::-webkit-calendar-picker-indicator {
+    display: none;
+}

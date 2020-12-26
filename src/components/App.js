@@ -7,14 +7,22 @@ import ChatBot from './ChatBot';
 import PageNotFound from './PageNotFound';
 import SignUpPopup from './SignUpPopup';
 import SignInPopup from './SignInPopup';
+import UpdateUserPopup from './UpdateUserPopup';
+import SuccessPopup from './SuccessPopup';
 import UserProfile from './UserProfile';
 import MenuMobile from './MenuMobile';
-import HeaderNavBarBurger from './HeaderNavBarBurger';
+import api from '../utils/api';
+import { CurrentUserContext } from '../contexts/CurrentUserContext';
+
 
 function App() {
   const [isSignupPopupOpen, setIsSignupPopupOpen] = React.useState(false);
   const [isSigninPopupOpen, setIsSigninPopupOpen] = React.useState(false);
+  const [isUpdateUserPopupOpen, setIsUpdateUserPopupOpen] = React.useState(false);
+  const [isSuccessPopupOpen, setIsSuccessPopupOpen] = React.useState(false);
   const [isMenuMobileOpen, setIsMenuMobileOpen] = React.useState(false);
+  const [requests, setRequests] = React.useState([]);
+  const [currentUser, setCurrentUser] = React.useState({});
   
   function handleOpenPopupSignup() {
     setIsSignupPopupOpen(true);
@@ -22,6 +30,14 @@ function App() {
 
   function handleOpenPopupSignin() {
     setIsSigninPopupOpen(true);
+  }
+
+  function handleOpenPopupUpdateUser() {
+    setIsUpdateUserPopupOpen(true);
+  }
+
+  function handleOpenSuccessPopup() {
+    setIsSuccessPopupOpen(true);
   }
 
   function handleOpenMenuMobile() {
@@ -32,54 +48,115 @@ function App() {
     setIsSignupPopupOpen(false);
     setIsSigninPopupOpen(false);
     setIsMenuMobileOpen(false);
+    setIsUpdateUserPopupOpen(false);
+    setIsSuccessPopupOpen(false);
   }
+
+  function handleUpdateUser(newUserInfo) {
+    api.updateUser(newUserInfo)
+      .then((res) => {
+        setCurrentUser(res);
+        closeAllPopups();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  function handleUserRequestSubmit(requestInfo) {
+    api.createRequest(requestInfo)
+      .then((newRequest) => {
+        setRequests([newRequest, ...requests]);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  function handleRequestDelete(request) {
+    api.deleteRequest(request._id)
+      .then(() => {
+        const newRequests = request.filter((r) => request._id !== r._id);
+        setRequests(newRequests);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+
+  React.useEffect(() => {
+    Promise.all([api.getUserInfo(), api.getRequests()])
+      .then(([user, requests]) => {
+        setCurrentUser(user);
+        setRequests(requests);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
     <>
-      <div className="root root_chat">
-        <div className="root__content">
-            <Switch>
-              <Route exact path="/">
-                <Header
-                onMenuMobile={handleOpenMenuMobile}
-                />
-                <Main
-                onSignupPopup={handleOpenPopupSignup}
-                onSigninPopup={handleOpenPopupSignin}
-                />
-              </Route>
-              <Route path="/chat-bot">
-                <ChatBot
-                onMenuMobile={handleOpenMenuMobile}
-                />
-              </Route>
-              <Route path="/profile">
-                <UserProfile
-                onMenuMobile={handleOpenMenuMobile}
-                />
-              </Route>
-              <Route path="*">
-                <PageNotFound
-                onMenuMobile={handleOpenMenuMobile}
-                />
-              </Route>
-            </Switch>
-
-            <Footer />
-            <SignUpPopup
-            isOpen={isSignupPopupOpen}
-            onClose={closeAllPopups}
-            />
-            <SignInPopup
-            isOpen={isSigninPopupOpen}
-            onClose={closeAllPopups}
-            />
-            <MenuMobile
-            isOpen={isMenuMobileOpen}
-            onClose={closeAllPopups}
-            />
-        </div> 
-      </div>
+      <CurrentUserContext.Provider value={currentUser}>
+        <div className="root root_chat">
+          <div className="root__content">
+              <Switch>
+                <Route exact path="/">
+                  <Header
+                  onMenuMobile={handleOpenMenuMobile}
+                  />
+                  <Main
+                  onSignupPopup={handleOpenPopupSignup}
+                  onSigninPopup={handleOpenPopupSignin}
+                  />
+                </Route>
+                <Route path="/chat-bot">
+                  <ChatBot
+                  onMenuMobile={handleOpenMenuMobile}
+                  onSendRequestText={handleUserRequestSubmit}
+                  onSuccessPopup={handleOpenSuccessPopup}
+                  />
+                </Route>
+                <Route path="/profile">
+                  <UserProfile
+                  onMenuMobile={handleOpenMenuMobile}
+                  onRequestDelete={handleRequestDelete}
+                  onUpdateUserPopup={handleOpenPopupUpdateUser}
+                  requests={requests}
+                  />
+                </Route>
+                <Route path="*">
+                  <PageNotFound
+                  onMenuMobile={handleOpenMenuMobile}
+                  />
+                </Route>
+              </Switch>
+              <Footer />
+              <SignUpPopup
+              isOpen={isSignupPopupOpen}
+              onClose={closeAllPopups}
+              />
+              <SignInPopup
+              isOpen={isSigninPopupOpen}
+              onClose={closeAllPopups}
+              />
+              <UpdateUserPopup
+              isOpen={isUpdateUserPopupOpen}
+              onClose={closeAllPopups}
+              onUpdateUser={handleUpdateUser}
+              />
+              <SuccessPopup
+              isOpen={isSuccessPopupOpen}
+              onClose={closeAllPopups}
+              />
+              <MenuMobile
+              isOpen={isMenuMobileOpen}
+              onClose={closeAllPopups}
+              />
+          </div> 
+        </div>
+      </CurrentUserContext.Provider>
     </>
   );
 }
