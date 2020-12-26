@@ -8,7 +8,8 @@ import UserRequest from './UserRequest';
 import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
 function UserProfile(props) {
-    const currentUser = React.useContext(CurrentUserContext);
+    const currentUser = React.useContext(CurrentUserContext);    
+    const requestsNumbers = Object.keys(props.requests).length;
 
     return (
         <>
@@ -44,19 +45,19 @@ function UserProfile(props) {
                         </div>
                         <div className="profile__dashboard">
                             <div className="profile__dashboard-column">
-                                <h3 className="profile__dashboard-title">26</h3>
+                                <h3 className="profile__dashboard-title">{requestsNumbers}</h3>
                                 <p className="profile__dashboard-description">Запросов было подано</p>
                             </div>
                             <div className="profile__dashboard-column">
-                                <h3 className="profile__dashboard-title">2</h3>
+                                <h3 className="profile__dashboard-title">{requestsNumbers}</h3>
                                 <p className="profile__dashboard-description">Находятся на рассмотрении</p>
                             </div>
                             <div className="profile__dashboard-column">
-                                <h3 className="profile__dashboard-title">18</h3>
+                                <h3 className="profile__dashboard-title">0</h3>
                                 <p className="profile__dashboard-description">Положительных решений</p>
                             </div>
                             <div className="profile__dashboard-column">
-                                <h3 className="profile__dashboard-title">6</h3>
+                                <h3 className="profile__dashboard-title">0</h3>
                                 <p className="profile__dashboard-description">Отрицательных решений</p>
                             </div>
                         </div>
