@@ -5,6 +5,7 @@ export default class chatForm {
     this._buttonReset = this._form.querySelector('.enter__reset');
     this._SubmitForm = SubmitForm;
     this._resetForm = resetForm;
+    this._submitButton = this._form.querySelector('.enter__submit');
   }
 
   _clear () {
@@ -17,11 +18,13 @@ export default class chatForm {
       if (!this._input.value) return
       this._SubmitForm();
       this._clear();
+      this._submitButton.disabled = true;
     })
 
     this._buttonReset.addEventListener('click', () => {
       this._clear();
       this._resetForm();
+      this._submitButton.disabled = false;
     })
   }
 

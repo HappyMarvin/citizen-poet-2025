@@ -1,43 +1,37 @@
 import Message from "../components/Message.js";
 import ChatForm from "../components/ChatForm.js";
 import {botMessages, messageTemplateSelector, chatListElement, regButton} from "../utils/constans.js";
+import api from "../utils/api.js";
 
 //Создаем первое сообщение бота
 const welcome = new Message(botMessages.welcome, messageTemplateSelector);
 chatListElement.append(welcome.createMessage());
+let test;
 
-
-function wordsRequest(words) {
-  // Функция получает массив слов words
-  // Здесь должен формироваться запрос к базе стихов
-  // функция должна возвращать массив обьектов вида:
-  return [
-    {
-    word: 'заменить',
-    string: 'Утраты сердца заменить',
-    poem: `Утраты сердца заменить;
-          ...целый стих`
-    },
-    {
-      word: 'скамейки',
-      string: 'Зеленой садовой скамейки',
-      poem: `Зеленой садовой скамейки;
-          ...целый стих`
-    },
-    {
-      word: 'у',
-      string: 'В ночь таежную у костра',
-      poem: `В ночь таежную у костра;
-          ...целый стих`
-    },
-    {
-      word: 'дома',
-      string: 'Стучащаяся пальчиком в дома',
-      poem: `Стучащаяся пальчиком в дома;
-          ...целый стих`
-    },
-  ]
+async function wordRequest(word) {
+  return fetch(`https://citizen-poet-2025.herokuapp.com/poems/?q=${word}&wordString=1`, {
+    method: 'GET'
+  })
+    .then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      return Promise.reject('Произошла ошибка при создании запроса')
+    })
 }
+
+async function wordsRequest(string) {
+  const text = string.replace(/[/.,!?;]*/g, '');
+  const words = text.split(' ');
+  let results = [];
+  for (let i=0; i < words.length; i++) {
+    let result = await wordRequest(words[i])
+    if (result[0]) {
+    results.push({'word': result[0].searchResult.word[0], 'string': result[0].searchResult.poemString[0]});
+    }}
+  return results;
+}
+
 
 function wordsToPoem (arrayWords) {
   // формируем из массива обьектов со словами стих
@@ -57,14 +51,16 @@ function clearChat() {
   chatListElement.append(welcome.createMessage());
 }
 
-function SubmitForm () {
+async function SubmitForm () {
   let message = new Message(this._input.value, messageTemplateSelector, true);
   const text = this._input.value.replace(/[/.,!?;]*/g, '');
   const words = text.split(' ');
 
   chatListElement.append(message.createMessage());
-  message = new Message(wordsToPoem(wordsRequest(words)), messageTemplateSelector);
-  chatListElement.append(message.createMessage());
+  let arrayWords = await wordsRequest(this._input.value)
+  message = new Message(wordsToPoem(arrayWords), messageTemplateSelector);
+  chatListElement.append(message.createMessage())
+
 
   message = new Message(botMessages.second, messageTemplateSelector, false, true);
   chatListElement.append(message.createMessage());
