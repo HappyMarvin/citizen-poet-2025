@@ -6,6 +6,10 @@
 
 }
 
+.content__button_signup:hover {
+    box-shadow:-7px -7px 20px #2F89FC, 5px 5px 20px rgba(31, 34, 37, 0.61);
+}
+
 @media screen and (max-width: 1280px) {
     .content__button_signup {
         margin-bottom: 32px;

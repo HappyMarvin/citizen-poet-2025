@@ -18,4 +18,7 @@
         font-size: 20px;
         font-weight: 400;
     }
+    .profile__requests-history-button-mobile:hover {
+        box-shadow:-7px -7px 20px #2F89FC, 5px 5px 20px rgba(31, 34, 37, 0.61);
+    }
 }
