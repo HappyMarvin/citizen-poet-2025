@@ -14,7 +14,7 @@
 }
 
 .chat-container__submit:hover {
-  box-shadow: 5px 5px 48px rgba(0, 0, 0, 0.3), -5px -5px 20px rgba(46, 133, 243, 0.6);
+  box-shadow:-7px -7px 20px #2F89FC, 5px 5px 20px rgba(31, 34, 37, 0.61);
 }
 
 @media screen and (max-width: 800px) {
