@@ -9,7 +9,7 @@ import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
 function UserProfile(props) {
     const currentUser = React.useContext(CurrentUserContext);    
-    const requestsNumbers = Object.keys(props.requests).length;
+    const requestsCounter = Object.keys(props.requests).length;
 
     return (
         <>
@@ -32,7 +32,7 @@ function UserProfile(props) {
             </header>
             <div className="profile">
                 <div className="profile__user-container">
-                    <button className="profile__settings-button-mobile" type="button"/>
+                    <button className="profile__settings-button-mobile" type="button" onClick={props.onUpdateUserPopup}/>
                     <img className="profile__user-avatar" src={userAvatar} />
                     <div className="profile__user-about">
                         <div className="profile__name-settings-container">
@@ -45,11 +45,11 @@ function UserProfile(props) {
                         </div>
                         <div className="profile__dashboard">
                             <div className="profile__dashboard-column">
-                                <h3 className="profile__dashboard-title">{requestsNumbers}</h3>
+                                <h3 className="profile__dashboard-title">{requestsCounter}</h3>
                                 <p className="profile__dashboard-description">Запросов было подано</p>
                             </div>
                             <div className="profile__dashboard-column">
-                                <h3 className="profile__dashboard-title">{requestsNumbers}</h3>
+                                <h3 className="profile__dashboard-title">{requestsCounter}</h3>
                                 <p className="profile__dashboard-description">Находятся на рассмотрении</p>
                             </div>
                             <div className="profile__dashboard-column">
@@ -69,13 +69,13 @@ function UserProfile(props) {
                         <NavLink to="/chat-bot"><button className="profile__requests-history-button" type="button">Создать запрос</button></NavLink>
                     </div>
                     <div className="profile__requests-history-cards">
-                        { props.requests.map((request) => (
+                        {props.requests.map((request) => (
                             <UserRequest
                             request={request}
                             key={request._id}
                             onRequestDelete={props.onRequestDelete}
                             />
-                            ))}
+                        ))}
                         <button className="profile__requests-history-more-button">Посмотреть еще</button>
                     </div>
                 </div>

@@ -13,6 +13,12 @@
     cursor: pointer;
 }
 
+.profile__requests-history-delete-button:hover {
+    opacity: 0.2;
+    cursor: pointer;
+    transition: opacity ease .2s;
+}
+
 @media screen and (max-width: 1100px) {
     .profile__requests-history-delete-button {
         width: 30px;
