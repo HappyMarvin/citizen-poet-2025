@@ -5,7 +5,6 @@
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  border: 2px #000 solid;
   object-fit: cover;
   box-sizing: border-box;
 }

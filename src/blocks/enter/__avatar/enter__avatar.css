@@ -1,7 +1,6 @@
 .enter__avatar {
   position: absolute;
   border-radius: 50px;
-  border: 2px #000 solid;
   object-fit: cover;
   box-sizing: border-box;
   width: 60px;
